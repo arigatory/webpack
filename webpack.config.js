@@ -1,5 +1,7 @@
 const path = require('path');
 // Импортируем пакет path
+const webpack = require('webpack');
+
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.js'),
@@ -8,7 +10,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [ ],
+        use: [ 'babel-loader'],
       },
     ],
   },
