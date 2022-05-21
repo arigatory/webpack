@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = "React with Webpack and Babel";
+import App from './app';
+
+const title = "React with Webpack and Babel2";
 
 
 ReactDOM.render(
-    <h1>{title}</h1>,document.getElementById('app')
+   <App title={title} />,document.getElementById('app')
 );
